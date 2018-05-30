@@ -9,6 +9,8 @@ def fall(tala):
     ta = tala*200
     return str(ta)
 
+arri = [8,10,1,2,9,7,4,5,8,6,4,5,6,5,2,3,5,76,4,3,2]
+
 app = Flask(__name__)
 
 
@@ -24,7 +26,7 @@ def bro(tala):
 
 @app.route('/prufa/')
 def brom():
-    return quicksortLomuto([3,6,5,1,7],0,4)
+    return quicksortLomuto(arri,0,len(arri)-1)
 
 
 if __name__ == '__main__':
